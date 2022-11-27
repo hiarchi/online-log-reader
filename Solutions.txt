@@ -1,0 +1,25 @@
+Major Technicals issues of the task:
+
+1. How to establish a connection between client and server ?
+   
+Ans. There were several ways to connect the server with client but to make it more of a real-time communication, Socket.io was a feasible option to use 
+for the communication but socket.io is used for Bidirectional communication between server and client where both can send and recieve data.
+For a one ways communication between server and client, SERVER SENT CLIENTS are used and the same is being used in the task.
+Server-Sent Events (SSE) is a technology based on HTTP. On the client-side, it provides an API called EventSource (part of the HTML5 standard)
+that allows us to connect to the server and receive updates from it.
+The client sents a request through the API and server starts to display the data of the file and if changes are being done in real-time, the server displays the 
+the text in the real time.
+
+
+2. How to know that something is added to the file ?
+
+Ans. I have used the Stream method to read data from the file instead of conventional readfilesync method.
+Streams are objects that let you read data from a source or write data to a destination in continuous fashion. Each type of Stream is an EventEmitter instance and\
+throws several events at different instance of times. So, whenever we make changes to a file the event-streams helps in updating the server in real time. 
+The server-sent event API is contained in the EventSource interface; to open a connection to the server to begin receiving events from it, create a new EventSource 
+object with the URL of a script that generates the events.
+
+3. How to make sure that only the newly added text is sent to the client ?
+
+Ans. Unfortunately, I was not able to solve find the relevant solution to it. I got some naive approaches but they were irrelevant when the data had a larger.
+ 
