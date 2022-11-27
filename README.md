@@ -5,6 +5,7 @@ The following project streams the data of file present on the server and display
 1. clone the repo inside your local device.
 2. Run ``` npm install``` to install all the dependencies of the FrontEnd & BackEnd folder.
 3. Run ```node server.js``` in the Backend folder and ```npm start``` in a new terminal for the FrontEnd.
+4. Also, along with ```node server.js``` you can also use the Client1.html file as a client present in the Backend folder.
 4. Try making some changes in the text file present in the BackEnd folder. The changes will be shown on the terminal of the server.
 
 
